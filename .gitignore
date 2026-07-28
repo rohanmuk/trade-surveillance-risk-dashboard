@@ -31,8 +31,13 @@ htmlcov/
 # --- Editors / OS ---------------------------------------------------------
 .DS_Store
 .idea/
-.vscode/
 *.swp
+
+# .vscode/settings.json IS tracked -- it points Pylance and the test runner at
+# the project's own .venv, which is what stops "Import could not be resolved"
+# warnings on a fresh clone. Other .vscode files stay local.
+.vscode/*
+!.vscode/settings.json
 
 # --- Secrets --------------------------------------------------------------
 .env
