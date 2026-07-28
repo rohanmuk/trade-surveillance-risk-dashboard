@@ -1,0 +1,48 @@
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual environments -------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# --- Testing / tooling ----------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Notebooks ------------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- Streamlit ------------------------------------------------------------
+.streamlit/secrets.toml
+
+# --- Editors / OS ---------------------------------------------------------
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# --- Secrets --------------------------------------------------------------
+.env
+.env.*
+
+# --- Generated exports ----------------------------------------------------
+# Ad-hoc CSVs downloaded from the dashboard.
+trade_exceptions.csv
+trades_filtered.csv
+
+# NOTE: data/simulated_trades.csv is deliberately NOT ignored. It is the
+# committed sample dataset the dashboard and notebook run against, and it is
+# fully synthetic (see scripts/generate_trades.py).

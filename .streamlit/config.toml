@@ -1,0 +1,17 @@
+# The charts are built on Plotly's `plotly_white` template with a fixed
+# red/orange (flagged) vs blue/grey (normal) palette, so the app pins a light
+# base theme rather than following the viewer's OS setting -- otherwise the
+# figures and the surrounding chrome disagree.
+
+[theme]
+base = "light"
+primaryColor = "#d62728"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f5f7fa"
+textColor = "#1a202c"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true

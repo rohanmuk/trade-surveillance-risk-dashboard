@@ -1,0 +1,23 @@
+# Core analytics
+numpy==1.26.4
+pandas==2.2.3
+
+# Dashboard
+streamlit==1.50.0
+plotly==6.8.0
+
+# Synthetic data generation (scripts/generate_trades.py)
+Faker==25.9.2
+
+# Notebook (notebooks/trade_surveillance_eda.ipynb)
+notebook==7.5.7
+
+# Tests
+pytest==8.4.2
+
+# SQLite is used via the `sqlite3` module in the standard library -- no dependency needed.
+#
+# Versions are pinned to what this project was developed and tested against on
+# Python 3.9. numpy is held below 2.0 for compatibility across the stack; the
+# code itself targets 3.9+ and runs unchanged on 3.11/3.12 if you prefer to
+# loosen these pins.
