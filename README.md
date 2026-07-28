@@ -6,12 +6,33 @@ concentrated counterparty exposure, hyperactive traders and desks, lifecycle eve
 long after the trade, and settlement dates that fall outside market convention.
 
 > **All data in this repository is simulated.** Trader and counterparty names are generated
-> with [Faker](https://faker.readthedocs.io/). There is no real client, counterparty or
-> employee data anywhere in the project.
+> with [Faker](https://faker.readthedocs.io/). There is no real client, counterparty,
+> employee or employer data anywhere in the project.
 
 ![Dashboard preview](images/dashboard_preview.png)
 
 <!-- The preview image is captured by hand -- see images/README.md. -->
+
+---
+
+## The business problem
+
+Trading and capital markets teams process large volumes of transactions across products,
+counterparties, traders and desks. Risk, compliance and operations teams need tools to
+monitor that activity and identify transactions that may require review.
+
+This dashboard simulates that process: it applies rule-based surveillance checks to trade
+data and presents the results in an interactive format.
+
+A risk analyst can use it to quickly identify which trades, desks, counterparties or
+products may need a closer look — if a counterparty accounts for an outsized share of
+total exposure, or a trader has an unusual number of late amendments, the dashboard
+surfaces it for investigation.
+
+Built as a personal portfolio project to demonstrate financial markets analytics, risk
+monitoring, data visualisation and Python dashboard development.
+
+**Tools:** Python · pandas · NumPy · Streamlit · Plotly · SQL / SQLite · pytest
 
 ---
 
